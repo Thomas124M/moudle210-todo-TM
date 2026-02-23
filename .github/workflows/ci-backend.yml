@@ -6,7 +6,7 @@ on:
       - 'backend/**'
 
 env:
-  REG_NAME: "acrinfobi22210.azurecr.io" # Nom du registy
+  REG_NAME: "acrinfobi22210.azurecr.io"
   IMAGE_NAME: "backend-TM" # Nom de votre image
 
 jobs:
