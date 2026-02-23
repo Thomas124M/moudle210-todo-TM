@@ -1,9 +1,11 @@
+name: Build and save my Docker image to a regitry
+
 on:
   push:
     branches:
       - main
     paths:
-      - 'backend/**'
+      - 'src/backend/**'
 
 env:
   REG_NAME: "acrinfobi22210.azurecr.io"
