@@ -45,6 +45,8 @@ jobs:
         with:
           urls: |
             https://todo-app.thomasmao.emf-informatique.ch/
+          budgetPath: src/backend/budget.json  
+          uploadArtifacts: true
           temporaryPublicStorage: true
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
