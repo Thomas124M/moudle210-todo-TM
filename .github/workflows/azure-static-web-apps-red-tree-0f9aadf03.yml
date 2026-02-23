@@ -5,7 +5,7 @@ on:
     branches:
       - main
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, closed]
     branches:
       - main
 
@@ -44,3 +44,17 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_RED_TREE_0F9AADF03 }}
           action: "close"
+
+  verification_frontend_job:
+
+    runs-on: ubuntu-latest
+    name: Verification Frontend Job
+    steps:
+    - name: Vérifier la présence de index.html
+      run: |
+        if [ -f frontend/index.html ]; then
+          echo "Le fichier index.html existe"
+        else
+          echo "Erreur : index.html n'existe pas!"
+          exit 1
+        fi
