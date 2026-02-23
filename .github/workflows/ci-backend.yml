@@ -2,6 +2,8 @@ on:
   push:
     branches:
       - main  # Déclenchement lorsque le code est poussé sur main
+    paths:
+      - 'backend/**'
 
 env:
   REG_NAME: "acrinfobi22210.azurecr.io" # Nom du registy
