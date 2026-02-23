@@ -9,7 +9,7 @@ on:
 
 env:
   REG_NAME: "acrinfobi22210.azurecr.io"
-  IMAGE_NAME: "backend-TM"
+  IMAGE_NAME: "backend-tm"
 
 jobs:
   build-and-deploy:

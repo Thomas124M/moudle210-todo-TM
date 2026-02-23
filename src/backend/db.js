@@ -1,4 +1,4 @@
-// Use the MariaDB Node.js Connector--
+// Use the MariaDB Node.js Connector---
 var mariadb = require('mariadb');
 
 require('dotenv').config();
