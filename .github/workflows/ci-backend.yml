@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main  # Déclenchement lorsque le code est poussé sur main
+      - main
     paths:
       - 'backend/**'
 
