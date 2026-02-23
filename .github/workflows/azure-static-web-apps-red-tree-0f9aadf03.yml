@@ -45,6 +45,7 @@ jobs:
         with:
           urls: |
             https://todo-app.thomasmao.emf-informatique.ch/
+          configPath: src/backend/assertions.json
           budgetPath: src/backend/budget.json  
           uploadArtifacts: true
           temporaryPublicStorage: true
