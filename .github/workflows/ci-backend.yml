@@ -34,4 +34,4 @@ jobs:
       # Push vers la registry
       - name: Push Docker image
         run: |
-          docker push ${{ env.REG_NAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }} -f src/backend/Dockerfile src/backend/
+          docker push ${{ env.REG_NAME }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
