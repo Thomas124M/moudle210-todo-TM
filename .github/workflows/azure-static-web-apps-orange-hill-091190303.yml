@@ -42,6 +42,9 @@ jobs:
           ###### End of Repository/Build Configurations ######
       - name: Lighthouse CI Action
         uses: treosh/lighthouse-ci-action@12.6.1
+        with:
+          urls: |
+            https://todo-app.thomasmao.emf-informatique.ch/
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
